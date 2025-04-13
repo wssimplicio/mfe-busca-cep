@@ -1,27 +1,37 @@
-# MfeBuscaCep
+# 🧩 MfeBuscaCep -> app-remote
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## ⚙️ Tecnologias utilizadas
 
-## Development server
+- Angular
+- @angular-architects/native-federation
+- TypeScript
+- Docker (opcional para containerização)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🧰 Pré-requisitos
+Node.js 18+
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular CLI 16 ou superior
 
-## Build
+NPM ou Yarn
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+(Opcional) Docker instalado
 
-## Running unit tests
+## 🎯 Como usar este projeto de exemplo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+O projeto acima é um exemplo de app-remote conforme citado no repo do host
 
-## Running end-to-end tests
+Após clonar você pode subir com:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+ng serve 
+```
+ Ou se preferir pode subir com o Docker que já deixei preparado como exemplo
 
-## Further help
+```bash
+docker compose up
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🤝 Contribuições
+Fique à vontade para abrir issues, enviar PRs ou sugerir melhorias! A ideia é manter este repositório como um ponto de partida para quem quer explorar micro frontends no Angular.
