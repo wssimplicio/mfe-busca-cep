@@ -33,5 +33,11 @@ ng serve
 docker compose up
 ```
 
+### ⚠️ Atenção !
+ Caso faça alguma alteração nos componentes é necessario rebuildar o projeto se caso subir com Docker:
+ ```bash
+docker compose up --build
+```
+
 ## 🤝 Contribuições
 Fique à vontade para abrir issues, enviar PRs ou sugerir melhorias! A ideia é manter este repositório como um ponto de partida para quem quer explorar micro frontends no Angular.
