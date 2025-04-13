@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="cep" class="form-label">Digite o CEP:</label>
+      <input type="number" class="form-control" id="cep" [(ngModel)]="cep.cep">
+    </div>
+    <div class="col">
+      <label for="cep" class="form-label">
+        <p></p>
+      </label>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-success" (click)="consultaCep(cep.cep)">Buscar</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-danger" (click)="voltar()">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+      <label for="estado" class="form-label">Estado</label>
+      <input type="text" class="form-control" id="estado" [(ngModel)]="cep.state" disabled>
+    </div>
+    <div class="col">
+      <label for="cidade" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="cidade" [(ngModel)]="cep.city" disabled>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="bairro" class="form-label">Bairro</label>
+      <input type="text" class="form-control" id="bairro" [(ngModel)]="cep.neighborhood" disabled>
+    </div>
+    <div class="col">
+      <label for="endereco" class="form-label">Endereço</label>
+      <input type="text" class="form-control" id="endereco" [(ngModel)]="cep.street" disabled>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div [innerHTML]="maps">a</div>
+</div>

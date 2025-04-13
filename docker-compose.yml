@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  busca-cep-app:
+    container_name: mfe-busca-cep
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4201:4201"
+    networks:
+      - mfe-host_mfehost-net
+
+networks:
+  mfe-host_mfehost-net:
+    external: true
+
